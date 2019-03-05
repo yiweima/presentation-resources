@@ -1,0 +1,106 @@
+
+/* general override rules */
+
+.jimu-main-background{
+  background-color: #005fa2;
+}
+.jimu-widget-header-controller .jimu-drop-menu{
+  background-color: #005fa2;
+}
+.jimu-header-more-popup .icon-node {
+	background-color: #005fa2;
+}
+.jimu-header-more-popup .close-inner {
+	background-color: #005fa2;
+}
+.jimu-on-screen-widget-panel>.jimu-panel-title,
+.jimu-foldable-panel>.jimu-panel-title,
+.jimu-title-panel>.title{
+  background-color: #005fa2;
+}
+
+.esriPopup .titlePane {
+  background-color: #005fa2;
+}
+
+
+/* 
+
+DEMO START 
+
+*/
+
+/*
+  CSS variables
+*/
+
+:root {
+  --primary-color: #e10050; 
+}
+
+/* 
+  1. 
+  update on-screen widget icon
+*/
+
+.jimu-ismobile .jimu-widget-onscreen-icon {
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 0;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.jimu-ismobile .jimu-widget-onscreen-icon img {
+  width: 36px;
+  height: 36px;
+  margin: 14px;
+}
+
+/* 
+  2. widgets specific: override home and zoom 
+*/
+
+.jimu-ismobile .HomeButton .home,
+.jimu-ismobile .jimu-widget-zoomslider .zoom {
+  height: 40px;
+  width: 40px;
+  line-height: 36px;
+}
+
+/* 
+  3. restyle header 
+*/
+
+.jimu-ismobile .jimu-widget-header-controller .header-section {
+  display: none;
+}
+
+.jimu-ismobile .jimu-widget-header-controller .container-section {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.jimu-ismobile .jimu-widget-header-controller .icon-node {
+  border-right: 0;
+}
+
+/* 
+  4. restyle search 
+*/
+
+.jimu-ismobile .arcgisSearch {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.jimu-ismobile .arcgisSearch .searchGroup .searchInput {
+  height: 32px;
+  line-height: 32px;
+}
+
+.jimu-ismobile .arcgisSearch .searchBtn {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}

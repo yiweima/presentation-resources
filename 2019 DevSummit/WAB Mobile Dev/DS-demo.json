@@ -1,0 +1,139 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "devsummit_demo"
+    ]
+  },
+  "portalUrl": "https://onlineshowcase.maps.arcgis.com",
+  "appId": "",
+  "title": "Dev Summit 2019",
+  "subtitle": "Demo",
+  "geometryService": "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
+
+  "widgetOnScreen": {
+    "widgets": [{
+      "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+      "position": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "height": 40,
+        "relativeTo": "browser"
+      }
+    }, {
+      "uri": "widgets/Search/Widget",
+      "position": {
+        "left": 55,
+        "top": 5
+      }
+    }, {
+      "uri": "widgets/HomeButton/Widget",
+      "inPanel": false,
+      "position": {
+        "left": 7,
+        "top": 80
+      }
+    }, {
+      "uri": "widgets/ZoomSlider/Widget",
+      "visible": true,
+      "position": {
+        "top": 5,
+        "left": 7
+      }
+    }, {
+      "uri": "widgets/samplewidgets/Demo_DevSummit/Widget",
+      "position": {
+        "top": 55,
+        "left": 55
+      }
+    }]
+  },
+
+  "map": {
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "db9cb8e1a1124021bfe100033ca458a2",
+    "mapOptions": {},
+    "id": "map",
+    "portalUrl": "https://onlineshowcase.maps.arcgis.com",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5
+      }
+    },
+    "widgets": [{
+      "uri": "widgets/Legend/Widget"
+    },{
+      "uri": "widgets/LayerList/Widget"
+    },{
+      "uri": "widgets/Query/Widget"
+    },{
+      "uri": "widgets/About/Widget"
+    }]
+  },
+
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": {
+          "themes/FoldableTheme/widgets/HeaderController/Widget": {
+            "position": {
+              "left": 0,
+              "bottom": 0,
+              "right": 0,
+              "height": 72,
+              "relativeTo": "browser"
+            }
+        },
+        "widgets/HomeButton/Widget":{
+          "position": {
+            "left": 15,
+            "bottom": 113
+          }
+        }, 
+        "widgets/ZoomSlider/Widget": {
+          "position": {
+            "left": 15,
+            "bottom": 15
+          }
+        },
+        "widgets/samplewidgets/Demo_DevSummit/Widget": {
+          "position": {
+            "right": 15,
+            "bottom": 35
+          }
+        },
+        "widgets/Search/Widget": {
+          "position": {
+            "left": 15,
+            "top": 15,
+            "right": 15
+          }
+        }
+      }
+    },
+  
+    "map": {
+      "position": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 72
+      }
+    }
+  }
+}
